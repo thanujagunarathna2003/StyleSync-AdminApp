@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Dashboard"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#333"/>
+            <ImageButton
+                android:id="@+id/btnLogout"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_lock_power_off"
+                app:tint="#D32F2F" />
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#2E7D32"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL EARNINGS (COMPLETED)"
+                    android:textColor="#C8E6C9"
+                    android:letterSpacing="0.1"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtTotalEarnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 0.00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Today's Count"
+                        android:textColor="#757575"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtTodayBookings"
+                        android:text="0"
+                        android:textColor="#1976D2"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Total List"
+                        android:textColor="#757575"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtTotalBookings"
+                        android:text="0"
+                        android:textColor="#455A64"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTodayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#E3F2FD"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#BBDEFB"
+            android:clickable="true"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    app:tint="#1976D2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="VIEW TODAY'S APPOINTMENTS"
+                    android:textColor="#1976D2"
+                    android:textStyle="bold"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overall Workload Status"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView android:id="@+id/lblDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Completed: 0" android:textColor="#2E7D32" android:textStyle="bold" android:textSize="12sp"/>
+                <ProgressBar android:id="@+id/pbDone" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:progressTint="#2E7D32" android:layout_marginBottom="12dp"/>
+
+                <TextView android:id="@+id/lblPending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pending: 0" android:textColor="#D32F2F" android:textStyle="bold" android:textSize="12sp"/>
+                <ProgressBar android:id="@+id/pbPending" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:progressTint="#D32F2F" android:layout_marginBottom="12dp"/>
+
+                <TextView android:id="@+id/lblRescheduled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rescheduled: 0" android:textColor="#1976D2" android:textStyle="bold" android:textSize="12sp"/>
+                <ProgressBar android:id="@+id/pbRescheduled" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:progressTint="#1976D2"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:columnCount="2">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewBookings"
+                android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="12dp" android:clickable="true" android:focusable="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_agenda" app:tint="#D81B60"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All History" android:textStyle="bold" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardManageServices"
+                android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="12dp" android:clickable="true" android:focusable="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_input_add" app:tint="#1976D2"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Services" android:textStyle="bold" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

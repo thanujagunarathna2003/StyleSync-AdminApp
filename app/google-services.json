@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123969276243",
+    "project_id": "stylesync-app-eacc9",
+    "storage_bucket": "stylesync-app-eacc9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123969276243:android:6008114eb24c4f907479a6",
+        "android_client_info": {
+          "package_name": "lk.tgcompany.stylesync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1XZSL6rS443FZyRfgSI2rCic8MG5fyAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123969276243:android:65a3729b4f6d08767479a6",
+        "android_client_info": {
+          "package_name": "lk.tgcompany.stylesync_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1XZSL6rS443FZyRfgSI2rCic8MG5fyAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
